@@ -1,0 +1,38 @@
+characters:
+  female_lead:
+    name: 杰克
+    personality: 外表柔弱但内心坚强，善良温婉却不失独立，对爱情充满向往但有自己的原则。擅长烘焙，在事业上追求完美。
+  male_lead:
+    name: 珍妮
+    personality: 外表冷峻的金融精英，事业有成，内心重情重义。童年的变故让他对感情有所防备，但遇到真爱时会毫无保留地付出。
+novel:
+  title: 都市虐恋
+  total_chapters: 5
+  words_per_chapter: 2000
+story_style:
+  genre: 都市情感
+  tone: 虐心情深
+  plot_elements:
+  - 意外相遇
+  - 日久生情
+  - 误会与考验
+  - 身世之谜
+  - 商业纷争
+  - 真相大白
+  - 最终圆满
+ai_service:
+  provider: ollama
+  ollama:
+    base_url: http://localhost:11434
+    model: 
+  openai:
+    base_url: https://api.deepseek.com
+    api_key: 
+    model: deepseek-chat
+    temperature: 0.7
+    max_tokens: 2000
+generation:
+  chapters:
+    start_index: 1
+    end_index: null
+    generate_all: true
