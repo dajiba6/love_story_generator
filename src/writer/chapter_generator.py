@@ -71,6 +71,7 @@ class ChapterGenerator:
         prompt = f"""
         基于以下信息生成一个章节的内容：
         小说标题: {novel.config.title}
+        小说语言: {novel.config.language}
         总章节数: {novel.config.total_chapters}
         当前章节: {self.current_chapter}
         字数要求: {novel.config.words_per_chapter}字

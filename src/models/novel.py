@@ -11,6 +11,7 @@ class Character:
 
 @dataclass
 class NovelConfig:
+    language: str
     title: str
     total_chapters: int
     words_per_chapter: int
@@ -27,6 +28,7 @@ class Novel:
         self.male_lead = Character(**config["characters"]["male_lead"])
 
         self.config = NovelConfig(
+            language=config.get("basic", {}).get("language", "zh"),
             title=config["novel"]["title"],
             total_chapters=config["novel"]["total_chapters"],
             words_per_chapter=config["novel"]["words_per_chapter"],

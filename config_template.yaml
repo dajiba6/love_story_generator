@@ -1,3 +1,5 @@
+basic:
+  language: zh  # 
 characters:
   female_lead:
     name: 杰克

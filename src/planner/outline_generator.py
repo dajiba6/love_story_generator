@@ -28,6 +28,7 @@ class OutlineGenerator:
         config = self.novel.config
         return f"""请为一部言情小说生成详细的章节大纲，要求：
         - 小说标题：{config.title}
+        - 小说语言：{config.language}
         - 总章节数：{config.total_chapters}章
         - 女主角名字：{config.female_lead.name}，性格：{config.female_lead.personality}
         - 男主角名字：{config.male_lead.name}，性格：{config.male_lead.personality}
