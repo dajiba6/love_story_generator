@@ -38,10 +38,6 @@ def main():
 
         print(f"\nGenerated {len(chapters)} chapters")
         print(f"Total time: {duration} seconds")
-        print("\nPreview last chapter content:")
-        print("-" * 50)
-        print(chapters[-1]["content"][:200] + "...")
-        print("-" * 50)
 
     except Exception as e:
         print(f"\nError: An error occurred while generating the novel")

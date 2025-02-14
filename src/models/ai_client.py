@@ -44,7 +44,12 @@ class AIClient:
 
     def _generate_with_ollama(self, prompt: str) -> str:
         """Generate text using Ollama API"""
-        data = {"model": self.config["model"], "prompt": prompt, "stream": False}
+        data = {
+            "model": self.config["model"],
+            "prompt": prompt,
+            "temperature": self.config.get("temperature", 0.5),
+            "stream": False,
+        }
 
         response = requests.post(f"{self.config['base_url']}/api/generate", json=data)
         response.raise_for_status()
